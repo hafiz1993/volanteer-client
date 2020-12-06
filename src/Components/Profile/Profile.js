@@ -23,7 +23,7 @@ const Profile = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:3001/userEventList/${email}`)
+        fetch(`https://salty-plateau-30858.herokuapp.com/userEventList/${email}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data)

@@ -17,7 +17,7 @@ const Register = () => {
 console.log(item);
 
     useEffect(() => {
-        fetch(`http://localhost:3001/search/${id}`)
+        fetch(`https://salty-plateau-30858.herokuapp.com/search/${id}`)
             .then(res => res.json())
             .then(data => {
                 setItem(data)
@@ -50,7 +50,7 @@ console.log(item);
     }
 
     const handleFormSubmit = (e) => {
-        fetch(`http://localhost:3001/saveEvent`, {
+        fetch(`https://salty-plateau-30858.herokuapp.com/saveEvent`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({...userEvent, image:item.image})

@@ -13,7 +13,7 @@ const history = useHistory();
 const handleCancel = (id) => {
 
     if (window.confirm('Do you want to remove this item?')) {
-        fetch(`http://localhost:3001/deleteMyEvent/${id}`, {
+        fetch(`https://salty-plateau-30858.herokuapp.com/deleteMyEvent/${id}`, {
             method: 'DELETE',
         })
         .then(res => res.json())

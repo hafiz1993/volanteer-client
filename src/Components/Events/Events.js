@@ -7,7 +7,7 @@ import ShowItem from './ShowItem';
 const Events = () => {
     const [allEvent, setAllEvent] = useState ([])
     useEffect(() =>{
-        fetch(`http://localhost:3001/allEvents`)
+        fetch(`https://salty-plateau-30858.herokuapp.com/allEvents`)
         .then(res => res.json())
         .then(data =>{
             setAllEvent(data)
